@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/Logo.png" alt="Logo">
+    </header>
+
+    <div class="container">
+        <div class="input-section">
+            <textarea class="text-area" placeholder="Escribe tu texto aquí..."></textarea>
+            <div class="lower-section">
+                <div class="icon-info">
+                    <img src="img/icon-alerta.png" alt="Alerta">
+                    <span>Solo minúsculas</span>
+                </div>
+                <div class="buttons">
+                    <button onclick="btnEncriptar()">Encriptar</button>
+                    <button onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="output-section">
+            <div class="output-container">
+                <textarea class="mensaje" readonly></textarea>
+                <div class="overlay">
+                    <img src="img/Muñeco.png" alt="Fondo">
+                    <div class="overlay-text">
+                        <p>Ningún mensaje</p>
+                        <p>Escribe un texto ...</p>
+                    </div>
+                </div>
+                <button class="copy-btn" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
